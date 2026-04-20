@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist | Healthy Habits Navigator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="homepage-checklist.js" defer></script>
+  </head>
+  <body class="start-video-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="wrapper header-inner">
+        <div>
+          <p class="site-tagline">Early-Onset Colorectal Cancer Awareness</p>
+          <h1 class="site-title">Healthy Habits Navigator</h1>
+        </div>
+        <div class="journey-progress" aria-label="Story progress">
+          <p class="journey-label">Story Progress: Step 1 of 7 - Home</p>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="1" aria-label="Story sequence progress">
+            <span class="progress-fill story-progress-fill" style="width: 14.3%"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="wrapper">
+      <section class="home-hero" aria-labelledby="home-title">
+        <p class="impact-kicker">Learning Pathway</p>
+        <h2 id="home-title">Choose Where You Want To Start</h2>
+        <p>
+          Work through each section below. A check mark appears when you open that topic.
+        </p>
+        <p class="checklist-progress" aria-live="polite">
+          Progress: <strong><span id="checklist-count">0</span>/5 completed</strong>
+        </p>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-label="Checklist completion progress">
+          <span id="checklist-progress-fill" class="progress-fill"></span>
+        </div>
+        <button id="reset-checklist" class="developer-reset" type="button">
+          Developer: Reset Checklist
+        </button>
+      </section>
+
+      <section class="home-grid" aria-label="Homepage sections">
+        <article class="home-card" data-topic="video-rise-colon-cancer">
+          <h3>
+            Video: Rise of Colon Cancer
+            <span class="completion-mark" aria-hidden="true">✓</span>
+          </h3>
+          <p>Watch the featured story and context before moving into the science.</p>
+          <a class="button-link topic-link" data-topic="video-rise-colon-cancer" href="real-stories.html">Open Video Page</a>
+        </article>
+
+        <article class="home-card" data-topic="science-colorectal-cancer">
+          <h3>
+            Science: What is Colorectal Cancer?
+            <span class="completion-mark" aria-hidden="true">✓</span>
+          </h3>
+          <p>Review the basics, definitions, and why early-onset cases are increasing.</p>
+          <a class="button-link topic-link" data-topic="science-colorectal-cancer" href="what-is-colorectal-cancer.html">Open Science Page</a>
+        </article>
+
+        <article class="home-card" data-topic="fact-vs-faction">
+          <h3>
+            Fact vs Faction: What is true?
+            <span class="completion-mark" aria-hidden="true">✓</span>
+          </h3>
+          <p>Compare common claims and separate myths from reliable information.</p>
+          <a class="button-link topic-link" data-topic="fact-vs-faction" href="results.html">Open Fact vs Faction</a>
+        </article>
+
+        <article class="home-card" data-topic="questionnaire-risk">
+          <h3>
+            Questionaire: Am I at risk?
+            <span class="completion-mark" aria-hidden="true">✓</span>
+          </h3>
+          <p>Take the screening questionnaire to learn your potential risk level.</p>
+          <a class="button-link topic-link" data-topic="questionnaire-risk" href="questionnaire.html">Open Questionaire</a>
+        </article>
+
+        <article class="home-card" data-topic="education-links-more">
+          <h3>
+            Education: Links &amp; More
+            <span class="completion-mark" aria-hidden="true">✓</span>
+          </h3>
+          <p>Browse extra reading, medical references, and support organizations.</p>
+          <a class="button-link topic-link" data-topic="education-links-more" href="education.html">Open Education Page</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <p>Marvin Chow 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

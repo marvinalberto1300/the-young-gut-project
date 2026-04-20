@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire | Healthy Habits Navigator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="start-video-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="wrapper header-inner">
+        <div>
+          <p class="site-tagline">Early-Onset Colorectal Cancer Awareness</p>
+          <h1 class="site-title">Healthy Habits Navigator</h1>
+        </div>
+        <div class="journey-progress" aria-label="Story progress">
+          <p class="journey-label">Story Progress: Step 5 of 7 - Questionairre</p>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="5" aria-label="Story sequence progress">
+            <span class="progress-fill story-progress-fill" style="width: 71.4%"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="wrapper">
+      <section>
+        <h2>Lifestyle Reflection Questionnaire</h2>
+        <p class="helper-text">
+          These questions are for personal reflection only. They do not generate medical guidance,
+          diagnosis, or prediction.
+        </p>
+      </section>
+
+      <form action="#" method="get" aria-describedby="form-helper">
+        <p id="form-helper" class="helper-text">
+          This static form is designed to help you think about patterns discussed in public-health and
+          research contexts.
+        </p>
+        <p class="helper-text">
+          To personalize your reading experience without risk scoring, choose a reflection pathway near
+          the bottom and open the matching section on the results page.
+        </p>
+
+        <fieldset>
+          <legend>Diet and processed food intake</legend>
+          <div class="option-group">
+            <p>In a typical week, how often do you eat highly processed packaged foods?</p>
+            <label class="option" for="processed-often">
+              <input id="processed-often" name="processed-frequency" type="radio" value="often" />
+              Often
+            </label>
+            <label class="option" for="processed-sometimes">
+              <input id="processed-sometimes" name="processed-frequency" type="radio" value="sometimes" />
+              Sometimes
+            </label>
+            <label class="option" for="processed-rarely">
+              <input id="processed-rarely" name="processed-frequency" type="radio" value="rarely" />
+              Rarely
+            </label>
+            <label class="option" for="fiber-foods">
+              <input id="fiber-foods" name="diet-patterns" type="checkbox" value="fiber-foods" />
+              I regularly include fiber-rich foods such as vegetables, beans, and whole grains.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Physical movement</legend>
+          <div class="option-group">
+            <p>How would you describe your weekly movement routine?</p>
+            <label class="option" for="movement-regular">
+              <input id="movement-regular" name="movement-level" type="radio" value="regular" />
+              I move regularly on most days.
+            </label>
+            <label class="option" for="movement-some">
+              <input id="movement-some" name="movement-level" type="radio" value="some" />
+              I move some days, but not consistently.
+            </label>
+            <label class="option" for="movement-little">
+              <input id="movement-little" name="movement-level" type="radio" value="little" />
+              I currently have limited movement in my routine.
+            </label>
+            <label class="option" for="breaks">
+              <input id="breaks" name="movement-patterns" type="checkbox" value="breaks" />
+              I take short activity breaks during long periods of sitting.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sleep</legend>
+          <div class="option-group">
+            <p>How often do you get a consistent sleep schedule?</p>
+            <label class="option" for="sleep-consistent">
+              <input id="sleep-consistent" name="sleep-schedule" type="radio" value="consistent" />
+              Most nights are consistent.
+            </label>
+            <label class="option" for="sleep-varied">
+              <input id="sleep-varied" name="sleep-schedule" type="radio" value="varied" />
+              My schedule varies during the week.
+            </label>
+            <label class="option" for="sleep-disrupted">
+              <input id="sleep-disrupted" name="sleep-schedule" type="radio" value="disrupted" />
+              Sleep is often disrupted.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Stress</legend>
+          <div class="option-group">
+            <p>Which statements reflect your recent experience?</p>
+            <label class="option" for="stress-manageable">
+              <input id="stress-manageable" name="stress-level" type="radio" value="manageable" />
+              Stress feels generally manageable.
+            </label>
+            <label class="option" for="stress-fluctuating">
+              <input id="stress-fluctuating" name="stress-level" type="radio" value="fluctuating" />
+              Stress levels fluctuate a lot.
+            </label>
+            <label class="option" for="stress-high">
+              <input id="stress-high" name="stress-level" type="radio" value="high" />
+              Stress is frequently high.
+            </label>
+            <label class="option" for="stress-strategy">
+              <input id="stress-strategy" name="stress-patterns" type="checkbox" value="stress-strategy" />
+              I use stress-management practices such as breathing, journaling, or social support.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Alcohol</legend>
+          <div class="option-group">
+            <p>How would you describe your alcohol use?</p>
+            <label class="option" for="alcohol-none">
+              <input id="alcohol-none" name="alcohol-use" type="radio" value="none" />
+              I do not drink alcohol.
+            </label>
+            <label class="option" for="alcohol-occasional">
+              <input id="alcohol-occasional" name="alcohol-use" type="radio" value="occasional" />
+              I drink occasionally.
+            </label>
+            <label class="option" for="alcohol-frequent">
+              <input id="alcohol-frequent" name="alcohol-use" type="radio" value="frequent" />
+              I drink on many days of the week.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Smoking</legend>
+          <div class="option-group">
+            <p>Which option best matches your current smoking status?</p>
+            <label class="option" for="smoking-never">
+              <input id="smoking-never" name="smoking-status" type="radio" value="never" />
+              Never smoked.
+            </label>
+            <label class="option" for="smoking-former">
+              <input id="smoking-former" name="smoking-status" type="radio" value="former" />
+              Former smoker.
+            </label>
+            <label class="option" for="smoking-current">
+              <input id="smoking-current" name="smoking-status" type="radio" value="current" />
+              Current smoker.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose your reflection pathway</legend>
+          <div class="option-group">
+            <p>
+              This step lets you focus on what feels most relevant to you. It does not estimate personal
+              cancer risk.
+            </p>
+            <label class="option" for="pathway-diet-stress">
+              <input
+                id="pathway-diet-stress"
+                name="reflection-pathway"
+                type="radio"
+                value="diet-stress"
+              />
+              Food and stress patterns
+            </label>
+            <label class="option" for="pathway-movement-sleep">
+              <input
+                id="pathway-movement-sleep"
+                name="reflection-pathway"
+                type="radio"
+                value="movement-sleep"
+              />
+              Movement and sleep routine
+            </label>
+            <label class="option" for="pathway-substances">
+              <input
+                id="pathway-substances"
+                name="reflection-pathway"
+                type="radio"
+                value="substances"
+              />
+              Alcohol and smoking context
+            </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <section>
+        <h2>Next Step</h2>
+        <p>
+          You can open the general results page, or jump directly to the reflection pathway you selected.
+        </p>
+        <div class="action-links">
+          <a class="button-link" href="results.html">View Example Results</a>
+          <a class="button-link secondary" href="results.html#pathway-diet-stress">Food and Stress Pathway</a>
+          <a class="button-link secondary" href="results.html#pathway-movement-sleep">Movement and Sleep Pathway</a>
+          <a class="button-link secondary" href="results.html#pathway-substances">Alcohol and Smoking Pathway</a>
+          <a class="button-link secondary" href="education.html">Read Education Library</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <p>
+          Reflection questions are informational and non-diagnostic.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
