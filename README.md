@@ -1,0 +1,2 @@
+# the-young-gut-project
+Interactive, module‑based educational website designed to raise awareness about the alarming rise of early‑onset colorectal cancer, particularly among young adults. The platform delivers clear, accessible learning pathways that break down complex medical information into digestible, engaging modules. Each module focuses on a key topic—risk factors, symptoms, screening guidelines, prevention strategies, and lived experiences—to help users understand why colorectal cancer is increasing and what actions can reduce risk.
