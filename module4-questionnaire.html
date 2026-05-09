@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 4: Lifestyle Questionnaire | Healthy Habits Navigator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="module-section-flow.js" defer></script>
+  </head>
+  <body class="start-video-page academic-theme">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="wrapper header-inner">
+        <div>
+          <p class="site-tagline">Early-Onset Colorectal Cancer Awareness</p>
+          <h1 class="site-title">Healthy Habits Navigator</h1>
+        </div>
+        <div class="journey-progress" aria-label="Learning progress">
+          <p class="journey-label">Module 4 of 7 - Lifestyle Questionnaire</p>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="4" aria-label="Module completion progress">
+            <span class="progress-fill story-progress-fill" style="width: 57.1%"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="wrapper">
+      <section>
+        <h2>Lifestyle Reflection Questionnaire</h2>
+        <p class="helper-text">
+          These questions are for personal reflection only. They do not generate medical guidance,
+          diagnosis, or prediction.
+        </p>
+      </section>
+
+      <form action="#" method="get" aria-describedby="form-helper">
+        <p id="form-helper" class="helper-text">
+          This educational form is designed to help you think about patterns discussed in public-health and
+          research contexts.
+        </p>
+        <p class="helper-text">
+          To personalize your reading experience without risk scoring, choose a reflection pathway near
+          the bottom and open the matching section on the results page.
+        </p>
+
+        <fieldset>
+          <legend>Diet and processed food intake</legend>
+          <div class="option-group">
+            <p>In a typical week, how often do you eat highly processed packaged foods?</p>
+            <label class="option" for="processed-often">
+              <input id="processed-often" name="processed-frequency" type="radio" value="often" />
+              Often
+            </label>
+            <label class="option" for="processed-sometimes">
+              <input id="processed-sometimes" name="processed-frequency" type="radio" value="sometimes" />
+              Sometimes
+            </label>
+            <label class="option" for="processed-rarely">
+              <input id="processed-rarely" name="processed-frequency" type="radio" value="rarely" />
+              Rarely
+            </label>
+            <label class="option" for="fiber-foods">
+              <input id="fiber-foods" name="diet-patterns" type="checkbox" value="fiber-foods" />
+              I regularly include fiber-rich foods such as vegetables, beans, and whole grains.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Physical movement</legend>
+          <div class="option-group">
+            <p>How would you describe your weekly movement routine?</p>
+            <label class="option" for="movement-regular">
+              <input id="movement-regular" name="movement-level" type="radio" value="regular" />
+              I move regularly on most days.
+            </label>
+            <label class="option" for="movement-some">
+              <input id="movement-some" name="movement-level" type="radio" value="some" />
+              I move some days, but not consistently.
+            </label>
+            <label class="option" for="movement-little">
+              <input id="movement-little" name="movement-level" type="radio" value="little" />
+              I currently have limited movement in my routine.
+            </label>
+            <label class="option" for="breaks">
+              <input id="breaks" name="movement-patterns" type="checkbox" value="breaks" />
+              I take short activity breaks during long periods of sitting.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sleep</legend>
+          <div class="option-group">
+            <p>How often do you get a consistent sleep schedule?</p>
+            <label class="option" for="sleep-consistent">
+              <input id="sleep-consistent" name="sleep-schedule" type="radio" value="consistent" />
+              Most nights are consistent.
+            </label>
+            <label class="option" for="sleep-varied">
+              <input id="sleep-varied" name="sleep-schedule" type="radio" value="varied" />
+              My schedule varies during the week.
+            </label>
+            <label class="option" for="sleep-disrupted">
+              <input id="sleep-disrupted" name="sleep-schedule" type="radio" value="disrupted" />
+              Sleep is often disrupted.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Stress</legend>
+          <div class="option-group">
+            <p>Which statements reflect your recent experience?</p>
+            <label class="option" for="stress-manageable">
+              <input id="stress-manageable" name="stress-level" type="radio" value="manageable" />
+              Stress feels generally manageable.
+            </label>
+            <label class="option" for="stress-fluctuating">
+              <input id="stress-fluctuating" name="stress-level" type="radio" value="fluctuating" />
+              Stress levels fluctuate a lot.
+            </label>
+            <label class="option" for="stress-high">
+              <input id="stress-high" name="stress-level" type="radio" value="high" />
+              Stress is frequently high.
+            </label>
+            <label class="option" for="stress-strategy">
+              <input id="stress-strategy" name="stress-patterns" type="checkbox" value="stress-strategy" />
+              I use stress-management practices such as breathing, journaling, or social support.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Alcohol</legend>
+          <div class="option-group">
+            <p>How would you describe your alcohol use?</p>
+            <label class="option" for="alcohol-none">
+              <input id="alcohol-none" name="alcohol-use" type="radio" value="none" />
+              I do not drink alcohol.
+            </label>
+            <label class="option" for="alcohol-occasional">
+              <input id="alcohol-occasional" name="alcohol-use" type="radio" value="occasional" />
+              I drink occasionally.
+            </label>
+            <label class="option" for="alcohol-frequent">
+              <input id="alcohol-frequent" name="alcohol-use" type="radio" value="frequent" />
+              I drink on many days of the week.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Smoking</legend>
+          <div class="option-group">
+            <p>Which option best matches your current smoking status?</p>
+            <label class="option" for="smoking-never">
+              <input id="smoking-never" name="smoking-status" type="radio" value="never" />
+              Never smoked.
+            </label>
+            <label class="option" for="smoking-former">
+              <input id="smoking-former" name="smoking-status" type="radio" value="former" />
+              Former smoker.
+            </label>
+            <label class="option" for="smoking-current">
+              <input id="smoking-current" name="smoking-status" type="radio" value="current" />
+              Current smoker.
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>If you had to choose, are there any areas in your life that need changes or improvements?</legend>
+          <div class="option-group">
+            <p>
+              Choose the area that best matches where you want to improve your habits.
+            </p>
+            <label class="option" for="pathway-diet-stress">
+              <input
+                id="pathway-diet-stress"
+                name="reflection-pathway"
+                type="radio"
+                value="diet-stress"
+              />
+              Food and stress patterns
+            </label>
+            <label class="option" for="pathway-movement-sleep">
+              <input
+                id="pathway-movement-sleep"
+                name="reflection-pathway"
+                type="radio"
+                value="movement-sleep"
+              />
+              Movement and sleep routine
+            </label>
+            <label class="option" for="pathway-substances">
+              <input
+                id="pathway-substances"
+                name="reflection-pathway"
+                type="radio"
+                value="substances"
+              />
+              Alcohol and smoking context
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="action-links" style="margin-top: 1rem;">
+          <button id="score-quiz" class="button-link" type="button">Calculate Questionnaire Score</button>
+        </div>
+      </form>
+
+      <section style="margin-top: 1.5rem;">
+        <h2>How the Score Works</h2>
+        <p class="helper-text">
+          Each answer is assigned points based on how closely your lifestyle patterns align with those discussed in colorectal-cancer research. Patterns with more research evidence associated with colorectal health earn more points; patterns aligned with prevention guidance earn zero or fewer.
+        </p>
+        <ul class="helper-text">
+          <li><strong>Minimum score: 0</strong> — all answers reflect the lowest-risk patterns and all healthy habits are checked.</li>
+          <li><strong>Maximum score: 16</strong> — all answers reflect the highest-risk patterns and no healthy habits are checked.</li>
+        </ul>
+        <p class="helper-text">Score tiers:</p>
+        <ul class="helper-text">
+          <li><strong>0 – 3:</strong> Living healthy according to WCRF/AICR and ACS prevention guidance.</li>
+          <li><strong>4 – 7:</strong> Moderately healthy — some areas worth monitoring.</li>
+          <li><strong>8 – 11:</strong> Some risk factors present — specific habits and research evidence shown below your result.</li>
+          <li><strong>12 – 16:</strong> Multiple risk factors present — specific habits and research evidence shown below your result.</li>
+        </ul>
+      </section>
+
+      <section id="quiz-results" aria-live="polite" style="margin-top: 1.5rem;">
+        <h2>Your Questionnaire Result</h2>
+        <p id="score-summary" class="helper-text">
+          Complete the questionnaire, then select "Calculate Questionnaire Score" to view your result.
+        </p>
+        <div id="score-basis" class="helper-text"></div>
+        <div id="risk-habits" class="helper-text"></div>
+        <div id="risk-stats" class="helper-text"></div>
+      </section>
+
+      <section>
+        <h2>Next Step</h2>
+        <p>
+          Continue to Module 5 to explore the detailed research evidence behind each lifestyle
+          factor — including the biological mechanisms, IARC classifications, and population-level
+          data that inform the public health guidance you have been reflecting on.
+        </p>
+        <div class="action-links">
+          <a class="button-link secondary" href="module3-education.html">Back to Previous Module</a>
+          <a class="button-link" href="module5-results.html">Continue To Next Module</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <p>
+          Reflection questions are informational and non-diagnostic.
+        </p>
+        <p class="footer-links">
+          <a href="about.html">About</a>
+          <a href="credits.html">Credits</a>
+          <a href="sources.html">Sources</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var scoreButton = document.getElementById("score-quiz");
+        var summaryEl = document.getElementById("score-summary");
+        var basisEl = document.getElementById("score-basis");
+        var habitsEl = document.getElementById("risk-habits");
+        var statsEl = document.getElementById("risk-stats");
+
+        if (!scoreButton || !summaryEl || !basisEl || !habitsEl || !statsEl) {
+          return;
+        }
+
+        function getCheckedValue(name) {
+          var selected = document.querySelector('input[name="' + name + '"]:checked');
+          return selected ? selected.value : "";
+        }
+
+        function isChecked(id) {
+          var el = document.getElementById(id);
+          return !!(el && el.checked);
+        }
+
+        function createList(items) {
+          if (!items.length) {
+            return "";
+          }
+
+          var listItems = "";
+          for (var i = 0; i < items.length; i += 1) {
+            listItems += "<li>" + items[i] + "</li>";
+          }
+          return "<ul>" + listItems + "</ul>";
+        }
+
+        function buildEvidenceList(flags) {
+          var evidence = [];
+
+          if (flags.processedHigh) {
+            evidence.push(
+              "Processed meat: WCRF cites IARC findings that eating 50 g/day of processed meat is associated with about an 18% higher colorectal cancer risk. Source: <a href=\"https://www.wcrf.org/diet-activity-and-cancer/risk-factors/meat-fish-and-dairy-products/\" rel=\"noopener noreferrer\">WCRF / IARC processed meat evidence</a>."
+            );
+          }
+
+          if (flags.lowFiber) {
+            evidence.push(
+              "Dietary fiber: A dose-response meta-analysis found that each additional 10 g/day of total dietary fiber was associated with about a 10% lower colorectal cancer risk. Source: <a href=\"https://pubmed.ncbi.nlm.nih.gov/20920264/\" rel=\"noopener noreferrer\">Aune et al., BMJ 2011</a>."
+            );
+          }
+
+          if (flags.lowMovement || flags.sedentaryPattern) {
+            evidence.push(
+              "Physical activity and sedentary time: WCRF rates physical activity as protective for colon cancer; a meta-analysis also found about a 24% higher colon cancer risk in the highest sedentary-time group versus the lowest. Sources: <a href=\"https://www.wcrf.org/diet-activity-and-cancer/risk-factors/physical-activity/\" rel=\"noopener noreferrer\">WCRF physical activity evidence</a> and <a href=\"https://pubmed.ncbi.nlm.nih.gov/25183688/\" rel=\"noopener noreferrer\">Schmid and Leitzmann, JNCI 2014</a>."
+            );
+          }
+
+          if (flags.alcoholFrequent) {
+            evidence.push(
+              "Alcohol: A meta-analysis reported approximately a 7% higher colorectal cancer risk per 10 g/day ethanol increment. Source: <a href=\"https://pubmed.ncbi.nlm.nih.gov/25777099/\" rel=\"noopener noreferrer\">Bagnardi et al., Br J Cancer 2015</a>."
+            );
+          }
+
+          if (flags.smokingCurrent || flags.smokingFormer) {
+            evidence.push(
+              "Smoking: A pooled analysis found ever-smokers had about an 18% higher colorectal cancer risk compared with never-smokers. Source: <a href=\"https://pubmed.ncbi.nlm.nih.gov/19434203/\" rel=\"noopener noreferrer\">Liang et al., JNCI 2009</a>."
+            );
+          }
+
+          return evidence;
+        }
+
+        function getMissingMainAnswers(values) {
+          var labels = {
+            processed: "Diet and processed food intake",
+            movement: "Physical movement",
+            sleep: "Sleep",
+            stress: "Stress",
+            alcohol: "Alcohol",
+            smoking: "Smoking"
+          };
+          var missing = [];
+
+          if (!values.processed) missing.push(labels.processed);
+          if (!values.movement) missing.push(labels.movement);
+          if (!values.sleep) missing.push(labels.sleep);
+          if (!values.stress) missing.push(labels.stress);
+          if (!values.alcohol) missing.push(labels.alcohol);
+          if (!values.smoking) missing.push(labels.smoking);
+
+          return missing;
+        }
+
+        function calculateScore(values) {
+          var score = 0;
+
+          var processedPoints = { rarely: 0, sometimes: 1, often: 2 };
+          var movementPoints = { regular: 0, some: 1, little: 2 };
+          var sleepPoints = { consistent: 0, varied: 1, disrupted: 2 };
+          var stressPoints = { manageable: 0, fluctuating: 1, high: 2 };
+          var alcoholPoints = { none: 0, occasional: 1, frequent: 2 };
+          var smokingPoints = { never: 0, former: 1, current: 3 };
+
+          score += processedPoints[values.processed] || 0;
+          score += movementPoints[values.movement] || 0;
+          score += sleepPoints[values.sleep] || 0;
+          score += stressPoints[values.stress] || 0;
+          score += alcoholPoints[values.alcohol] || 0;
+          score += smokingPoints[values.smoking] || 0;
+
+          if (!isChecked("fiber-foods")) score += 1;
+          if (!isChecked("breaks")) score += 1;
+          if (!isChecked("stress-strategy")) score += 1;
+
+          if (score < 0) {
+            score = 0;
+          }
+
+          return score;
+        }
+
+        scoreButton.addEventListener("click", function () {
+          var answers = {
+            processed: getCheckedValue("processed-frequency"),
+            movement: getCheckedValue("movement-level"),
+            sleep: getCheckedValue("sleep-schedule"),
+            stress: getCheckedValue("stress-level"),
+            alcohol: getCheckedValue("alcohol-use"),
+            smoking: getCheckedValue("smoking-status")
+          };
+
+          var missing = getMissingMainAnswers(answers);
+          if (missing.length) {
+            summaryEl.textContent = "Please complete these sections first: " + missing.join(", ") + ".";
+            basisEl.textContent = "";
+            habitsEl.innerHTML = "";
+            statsEl.innerHTML = "";
+            return;
+          }
+
+          var score = calculateScore(answers);
+
+          var flags = {
+            processedHigh: answers.processed === "often",
+            lowFiber: !isChecked("fiber-foods"),
+            lowMovement: answers.movement === "little",
+            sedentaryPattern: !isChecked("breaks"),
+            alcoholFrequent: answers.alcohol === "frequent",
+            smokingFormer: answers.smoking === "former",
+            smokingCurrent: answers.smoking === "current"
+          };
+
+          var habits = [];
+          if (flags.processedHigh) habits.push("Frequent processed-food intake");
+          if (flags.lowFiber) habits.push("Not regularly eating fiber-rich foods");
+          if (flags.lowMovement) habits.push("Limited weekly physical movement");
+          if (flags.sedentaryPattern) habits.push("Long sitting periods without activity breaks");
+          if (flags.alcoholFrequent) habits.push("Frequent alcohol use");
+          if (flags.smokingFormer) habits.push("History of smoking");
+          if (flags.smokingCurrent) habits.push("Current smoking");
+
+          var evidence = buildEvidenceList(flags);
+
+          var tierText = "";
+          if (score <= 3) {
+            tierText = "Congrats! You're living healthy according to current colorectal-cancer prevention research from WCRF/AICR and ACS.";
+          } else if (score <= 7) {
+            tierText = "According to WCRF/AICR prevention guidance, you are moderately healthy.";
+          } else if (score <= 11) {
+            tierText = "According to peer-reviewed and public-health evidence, you may have some risk for colorectal cancer due to the habits below:";
+          } else {
+            tierText = "You may be at risk due to your following habits:";
+          }
+
+          summaryEl.textContent = tierText;
+          basisEl.textContent = "Your lifestyle risk score is " + score + ". This educational score is not a diagnosis.";
+
+          if (score >= 8) {
+            habitsEl.innerHTML = "<p><strong>Habits identified from your answers:</strong></p>" + createList(habits);
+            statsEl.innerHTML = "<p><strong>Research statistics and credible sources:</strong></p>" + createList(evidence);
+          } else {
+            habitsEl.innerHTML = "";
+            statsEl.innerHTML =
+              "<p>For evidence-based prevention guidance, review the American Cancer Society and WCRF resources in this module.</p>";
+          }
+
+          document.getElementById("quiz-results").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      })();
+    </script>
+  </body>
+</html>
