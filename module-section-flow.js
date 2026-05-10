@@ -1,6 +1,41 @@
 (function () {
   "use strict";
 
+  function getUniqueRequiredRadioNames(container) {
+    var radios = Array.prototype.slice.call(container.querySelectorAll(":scope > fieldset input[type='radio'][name]"));
+    var seen = {};
+    var names = [];
+
+    for (var i = 0; i < radios.length; i += 1) {
+      var name = radios[i].name;
+      if (name && !seen[name]) {
+        seen[name] = true;
+        names.push(name);
+      }
+    }
+
+    return names;
+  }
+
+  function isFormStepComplete(form) {
+    if (!form || form.tagName !== "FORM") {
+      return true;
+    }
+
+    var requiredRadioNames = getUniqueRequiredRadioNames(form);
+    if (!requiredRadioNames.length) {
+      return true;
+    }
+
+    for (var i = 0; i < requiredRadioNames.length; i += 1) {
+      if (!form.querySelector("input[name='" + requiredRadioNames[i] + "']:checked")) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
   function createButton(text, type, className) {
     var button = document.createElement("button");
     button.type = type || "button";
@@ -109,6 +144,12 @@
     var prev = createButton("Previous Section", "button", "button-link secondary");
     var next = createButton("Next Section", "button", "button-link");
 
+    function updateNextState() {
+      var currentStep = steps[current];
+      var lockedByIncompleteForm = currentStep && currentStep.tagName === "FORM" && !isFormStepComplete(currentStep);
+      next.disabled = current === steps.length - 1 || lockedByIncompleteForm;
+    }
+
     function setStep(index) {
       current = index;
       for (var i = 0; i < steps.length; i += 1) {
@@ -119,7 +160,7 @@
 
       indicator.textContent = "Section " + (current + 1) + " of " + steps.length;
       prev.disabled = current === 0;
-      next.disabled = current === steps.length - 1;
+      updateNextState();
       next.textContent = current === steps.length - 1 ? "Last Section" : "Next Section";
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -156,6 +197,13 @@
     controls.appendChild(next);
     host.appendChild(controls);
 
+    for (var j = 0; j < steps.length; j += 1) {
+      if (steps[j].tagName === "FORM") {
+        steps[j].addEventListener("change", updateNextState);
+        steps[j].addEventListener("input", updateNextState);
+      }
+    }
+
     setStep(0);
 
     return {
@@ -171,6 +219,11 @@
     var scoreBtn = document.getElementById("score-quiz");
     if (scoreBtn) {
       scoreBtn.addEventListener("click", function () {
+        var scoreForm = scoreBtn.closest("form");
+        if (scoreForm && !isFormStepComplete(scoreForm)) {
+          return;
+        }
+
         setTimeout(function () {
           flow.goToElement(document.getElementById("quiz-results"));
         }, 50);
