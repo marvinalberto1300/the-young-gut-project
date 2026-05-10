@@ -124,7 +124,17 @@
     certificateSection.hidden = false;
   }
 
-  function clearQuiz(form, feedbackEl, scoreEl, summaryEl, missedEl, certificateSection, statusEl) {
+  function updateNavigationVisibility(result, navigationEl) {
+    if (!navigationEl) return;
+    
+    if (result.passed) {
+      navigationEl.style.display = "block";
+    } else {
+      navigationEl.style.display = "none";
+    }
+  }
+
+  function clearQuiz(form, feedbackEl, scoreEl, summaryEl, missedEl, certificateSection, statusEl, navigationEl) {
     form.reset();
     feedbackEl.scrollIntoView({ behavior: "smooth", block: "start" });
     statusEl.textContent = "Submit the quiz to see your score.";
@@ -132,6 +142,7 @@
     summaryEl.textContent = "";
     missedEl.innerHTML = "";
     certificateSection.hidden = true;
+    if (navigationEl) navigationEl.style.display = "none";
   }
 
   function initQuiz() {
@@ -142,6 +153,7 @@
     var missedEl = document.getElementById("quiz-missed");
     var feedbackEl = document.getElementById("quiz-feedback");
     var retryButton = document.getElementById("retry-quiz");
+    var navigationEl = document.getElementById("quiz-navigation");
 
     var learnerNameInput = document.getElementById("learner-name");
     var certificateSection = document.getElementById("completion-certificate");
@@ -162,6 +174,7 @@
       var learnerName = learnerNameInput ? learnerNameInput.value.trim() : "";
 
       updateFeedback(result, missingQuestions, statusEl, scoreEl, summaryEl, missedEl);
+      updateNavigationVisibility(result, navigationEl);
 
       if (!missingQuestions.length && certificateSection && certificateName && certificateDate) {
         updateCertificate(result, learnerName, certificateSection, certificateName, certificateDate);
@@ -172,13 +185,20 @@
 
     if (retryButton && certificateSection) {
       retryButton.addEventListener("click", function () {
-        clearQuiz(form, feedbackEl, scoreEl, summaryEl, missedEl, certificateSection, statusEl);
+        clearQuiz(form, feedbackEl, scoreEl, summaryEl, missedEl, certificateSection, statusEl, navigationEl);
       });
     }
 
     if (printButton) {
       printButton.addEventListener("click", function () {
         window.print();
+      });
+    }
+
+    // Update certificate name as user types
+    if (learnerNameInput && certificateName) {
+      learnerNameInput.addEventListener("input", function () {
+        certificateName.textContent = learnerNameInput.value.trim() || "Learner";
       });
     }
   }

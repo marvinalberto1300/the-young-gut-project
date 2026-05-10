@@ -141,8 +141,6 @@
         </fieldset>
 
         <section class="quiz-controls" aria-label="Quiz actions">
-          <label for="learner-name" class="quiz-name-label">Certificate name</label>
-          <input id="learner-name" name="learner-name" class="quiz-name-input" type="text" maxlength="80" placeholder="Enter your name for the certificate" />
           <div class="action-links">
             <button id="submit-quiz" class="button-link" type="submit">Submit Quiz</button>
             <button id="retry-quiz" class="button-link secondary" type="button">Retry Quiz</button>
@@ -163,6 +161,10 @@
         <p class="impact-kicker">Healthy Habits Navigator</p>
         <h2 id="certificate-title">Certificate of Completion in Early-Onset Colorectal Cancer Awareness</h2>
         <p class="certificate-lead">This is to formally certify that</p>
+        <div class="certificate-name-input-wrapper">
+          <label for="learner-name" class="quiz-name-label">Your name for this certificate:</label>
+          <input id="learner-name" name="learner-name" class="quiz-name-input" type="text" maxlength="80" placeholder="Enter your name" />
+        </div>
         <p id="certificate-name" class="certificate-name">Learner Name</p>
         <p class="certificate-body">
           has successfully completed the educational requirements of
@@ -254,7 +256,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="quiz-navigation" style="display: none;">
         <h2>Continue Learning</h2>
         <div class="action-links">
           <a class="button-link secondary" href="module6-overview.html">Back to Module 6</a>
